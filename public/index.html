@@ -7,6 +7,8 @@
     <title>FoodWagon - Food Delivery</title>
     <link rel="stylesheet" href="/public/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,25 +23,17 @@
 
                 <div class="location">
                     <span class="location-label">Deliver to:</span>
-                    <div class="location-value">
-                        <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        <span>Current Location</span>
-                        <span class="location-address">Mohammadpur Bus Stand, Dhaka</span>
-                    </div>
+                    <i class="fa-solid fa-location-dot location-icon"></i>
+                    <span>Current Location</span>
+                    <span class="location-address">Mohammadpur Bus Stand, Dhaka</span>
                 </div>
+
+
 
                 <div class="header-actions">
                     <button class="search-btn">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                        Search Food
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search Food</span>
                     </button>
                     <button class="login-btn">Login</button>
                 </div>
@@ -59,46 +53,22 @@
                     <div class="search-card">
                         <div class="search-tabs">
                             <button class="tab-btn active">
-                                <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M4 17.27A9.69 9.69 0 0 0 12 22a9.68 9.68 0 0 0 7.48-3.5"></path>
-                                    <path d="M14 2H7a2 2 0 0 0-2 2v14"></path>
-                                    <path d="M13 8h7a2 2 0 0 1 2 2v7.95"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path d="M18.4 14.8a3 3 0 0 0 0-5.6"></path>
-                                </svg>
+                                <i class="fa-solid fa-motorcycle"></i>
                                 Delivery
                             </button>
                             <button class="tab-btn">
-                                <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                                </svg>
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 Pickup
                             </button>
                         </div>
 
                         <div class="search-form">
                             <div class="input-group">
-                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                <input type="text" placeholder="Enter Your Address">
+                                <input type="text" class="input-with-icon" placeholder="Enter Your Address">
                             </div>
+
                             <button class="find-food-btn">
-                                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="11" cy="11" r="8"></circle>
-                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                </svg>
+                                <i class="fa-solid fa-magnifying-glass"></i>
                                 Find Food
                             </button>
                         </div>
@@ -115,7 +85,6 @@
     <section class="popular-items">
         <div class="container">
             <div class="items-grid">
-
                 <!-- Карточка 1 -->
                 <div class="item-card">
                     <div class="item-image">
@@ -228,7 +197,8 @@
                 <h2>Popular Items</h2>
             </div>
 
-            <div class="items-grid">
+            <div class="items-grid2">
+                <!-- Карточка 1 -->
                 <div class="item-card">
                     <div class="item-image">
                         <img src="/public/assets/img/cheese-burger.png" alt="Food Item">
@@ -237,36 +207,18 @@
                         <h3>Cheese Burger</h3>
                         <div class="item-meta">
                             <div class="restaurant">
-                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
-                                </svg>
+                                <i class="fa-solid fa-location-dot location-icon"></i>
                                 Spice Garden
-                            </div>
-                            <div class="rating">
-                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
                             </div>
                         </div>
                         <div class="item-price">
                             <span class="price">$3.88</span>
-                            <button class="add-to-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
                         </div>
                     </div>
+                    <button class="order-now-btn">Order Now</button> <!-- Кнопка Order Now -->
                 </div>
 
+                <!-- Карточка 2 -->
                 <div class="item-card">
                     <div class="item-image">
                         <img src="/public/assets/img/toffes-cake.png" alt="Food Item">
@@ -275,36 +227,18 @@
                         <h3>Beef Burger</h3>
                         <div class="item-meta">
                             <div class="restaurant">
-                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
-                                </svg>
+                                <i class="fa-solid fa-location-dot location-icon"></i>
                                 Burger Palace
-                            </div>
-                            <div class="rating">
-                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
                             </div>
                         </div>
                         <div class="item-price">
                             <span class="price">$4.00</span>
-                            <button class="add-to-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
                         </div>
                     </div>
+                    <button class="order-now-btn">Order Now</button> <!-- Кнопка Order Now -->
                 </div>
 
+                <!-- Карточка 3 -->
                 <div class="item-card">
                     <div class="item-image">
                         <img src="/public/assets/img/dancake.png" alt="Food Item">
@@ -313,36 +247,18 @@
                         <h3>Veggie Pizza</h3>
                         <div class="item-meta">
                             <div class="restaurant">
-                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
-                                </svg>
+                                <i class="fa-solid fa-location-dot location-icon"></i>
                                 Pizza Hub
-                            </div>
-                            <div class="rating">
-                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
                             </div>
                         </div>
                         <div class="item-price">
                             <span class="price">$1.99</span>
-                            <button class="add-to-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
                         </div>
                     </div>
+                    <button class="order-now-btn">Order Now</button> <!-- Кнопка Order Now -->
                 </div>
 
+                <!-- Карточка 4 -->
                 <div class="item-card">
                     <div class="item-image">
                         <img src="/public/assets/img/crispy-sandwitch.png" alt="Food Item">
@@ -351,36 +267,18 @@
                         <h3>Sushi Platter</h3>
                         <div class="item-meta">
                             <div class="restaurant">
-                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
-                                </svg>
+                                <i class="fa-solid fa-location-dot location-icon"></i>
                                 Sushi World
-                            </div>
-                            <div class="rating">
-                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
                             </div>
                         </div>
                         <div class="item-price">
                             <span class="price">$3.00</span>
-                            <button class="add-to-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
                         </div>
                     </div>
+                    <button class="order-now-btn">Order Now</button> <!-- Кнопка Order Now -->
                 </div>
 
+                <!-- Карточка 5 -->
                 <div class="item-card">
                     <div class="item-image">
                         <img src="/public/assets/img/thai-soup.png" alt="Food Item">
@@ -389,57 +287,263 @@
                         <h3>Cheese Burger</h3>
                         <div class="item-meta">
                             <div class="restaurant">
-                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
-                                </svg>
+                                <i class="fa-solid fa-location-dot location-icon"></i>
                                 Spice Garden
-                            </div>
-                            <div class="rating">
-                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
                             </div>
                         </div>
                         <div class="item-price">
                             <span class="price">$2.79</span>
-                            <button class="add-to-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
+                        </div>
+                    </div>
+                    <button class="order-now-btn">Order Now</button> <!-- Кнопка Order Now -->
+                </div>
+            </div>
+
+            <!-- Стрелки -->
+            <div class="carousel-arrow left">&lt;</div>
+            <div class="carousel-arrow right">&gt;</div>
+        </div>
+    </section>
+
+    <!-- Featured Restaurants Section -->
+    <section class="featured-restaurants">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Restaurants</h2>
+            </div>
+
+            <div class="restaurant-grid">
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/food-world.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 20% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/food-world-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Foodworld</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
                             </button>
                         </div>
                     </div>
                 </div>
+
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/pizza-hub.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 15% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/pizzahub-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Pizzahub</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>40</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/food-world.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 20% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/food-world-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Foodworld</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/food-world.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 20% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/food-world-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Foodworld</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/food-world.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 20% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/food-world-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Foodworld</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/food-world.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 20% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/food-world-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Foodworld</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/food-world.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 20% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/food-world-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Foodworld</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="/public/assets/img/food-world.png" alt="Restaurant">
+                        <span class="discount-badge"><i class="fa-solid fa-tag"></i> 20% off</span>
+                        <span class="fast-badge"><i class="fa-solid fa-clock"></i> Fast</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <div class="restaurant-logo">
+                                <img src="/public/assets/img/food-world-logo.png" alt="Icon">
+                            </div>
+                            <div class="restaurant-title">
+                                <h3>Foodworld</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Новая кнопка снизу слева -->
+                        <div class="restaurant-footer">
+                            <button class="opens-tomorrow-btn">
+                                Opens tomorrow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
             <div class="view-all-container">
-                <a href="#" class="view-all-btn">View All Items</a>
-            </div>
-
-            <!-- Стрелки -->
-            <div class="carousel-arrow left">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 18l-6-6 6-6"></path>
-                </svg>
-            </div>
-
-            <div class="carousel-arrow right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 18l6-6-6-6"></path>
-                </svg>
+                <a href="#" class="view-all-btn">View All Restaurants</a>
             </div>
         </div>
     </section>
-
 
     <!-- Special Offers Section -->
     <section class="special-offers">

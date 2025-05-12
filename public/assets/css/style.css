@@ -80,26 +80,29 @@ button {
 }
 
 .location-label {
-    color: #666;
-    margin-right: 8px;
+    color: #000;
+    font-weight: 600;
+    display: inline;
+    margin-right: 5px; /* Уменьшено для плотности */
 }
 
 .location-value {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .location-icon {
     width: 18px;
     height: 18px;
     color: #FF7A00;
-    margin-right: 5px;
 }
 
 .location-address {
-    margin-left: 5px;
-    color: #333;
+    color: #000;
+    margin-left: 3px; /* Слегка уменьшено */
 }
+
 
 .header-actions {
     display: flex;
@@ -110,11 +113,19 @@ button {
 .search-btn {
     display: flex;
     align-items: center;
+    gap: 8px; /* Расстояние между иконкой и текстом */
     background: none;
     border: none;
-    color: #666;
     font-size: 16px;
     transition: color 0.3s;
+}
+
+.search-btn i {
+    color: #FF7A00; /* Оранжевая лупа */
+}
+
+.search-btn span {
+    color: #000; /* Черный текст */
 }
 
 .search-btn:hover {
@@ -201,12 +212,14 @@ button {
     color: #666;
     margin-right: 15px;
     transition: all 0.3s;
+    gap: 12px; /* расстояние между иконкой и текстом */
 }
 
 .tab-btn.active {
     background-color: #FFE9E0;
     color: #FF7A00;
 }
+
 
 .tab-icon {
     width: 18px;
@@ -220,8 +233,8 @@ button {
 }
 
 .input-group {
-    flex: 1;
     position: relative;
+    flex: 1;
     margin-right: 15px;
 }
 
@@ -230,14 +243,13 @@ button {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
+    font-size: 18px;
     color: #999;
 }
 
 .input-group input {
     width: 100%;
-    padding: 12px 12px 12px 40px;
+    padding: 12px 12px 12px 40px; /* учитываем место для иконки */
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
@@ -260,11 +272,13 @@ button {
     font-size: 16px;
     font-weight: 500;
     transition: background-color 0.3s;
+    gap: 8px; /* Добавляем расстояние между иконкой и текстом */
 }
 
 .find-food-btn:hover {
     background-color: #FF7A00;
 }
+
 
 .btn-icon {
     width: 18px;
@@ -280,10 +294,12 @@ button {
     z-index: 1;
 }
 
+
 /* Popular Items Section Styles */
 .popular-items {
     padding: 80px 0;
     background-color: #fff;
+    position: relative;
 }
 
 .section-header {
@@ -298,17 +314,27 @@ button {
     margin-bottom: 15px;
 }
 
-.section-header p {
-    font-size: 18px;
-    color: #666;
-}
-
+/* Стили для сетки и центрирования карточек */
 .items-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Заменено с 4 на 5 */
-    gap: 25px;
+    grid-template-columns: repeat(4, 1fr); /* 5 блоков в строке */
+    gap: 30px; /* Расстояние между карточками */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    align-items: start; /* Карточки выравниваются по верху */
+    width: 100%;
+    margin-top: 30px; /* Отступ сверху */
 }
 
+/* Стили для сетки и центрирования карточек */
+.items-grid2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 блоков в строке */
+    gap: 30px; /* Расстояние между карточками */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    align-items: start; /* Карточки выравниваются по верху */
+    width: 100%;
+    margin-top: 30px; /* Отступ сверху */
+}
 
 .item-card {
     background-color: #fff;
@@ -316,6 +342,8 @@ button {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 280px;
 }
 
 .item-card:hover {
@@ -336,13 +364,35 @@ button {
 .discount-badge {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 150px; /* Сдвиг влево для размещения второго бейджа */
     background-color: #FF7A00;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 50px;
+    padding: 6px 20px;
+    border-radius: 8px;
     font-size: 14px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: auto;
+    line-height: 1;
+}
+
+.fast-badge {
+    position: absolute;
+    top: 15px;
+    right: 53px; /* Расположен правее основного бейджа */
+    background-color: #FFC107; /* Ярко-желтый цвет */
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: auto;
+    line-height: 1;
 }
 
 .item-info {
@@ -366,7 +416,7 @@ button {
 .restaurant {
     display: flex;
     align-items: center;
-    color: #666;
+    color: #FF7A00;
     font-size: 14px;
 }
 
@@ -424,6 +474,33 @@ button {
     height: 18px;
 }
 
+/* Кнопка Order Now */
+.order-now-btn {
+    background-color: #FF7A00;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Отступ сверху */
+    display: block; /* Чтобы кнопка была отдельной, а не обтекала карточки */
+    width: 100%; /* Кнопка будет растягиваться на всю ширину */
+    
+}
+
+.order-now-btn:hover {
+    background-color: #e56e00;
+}
+
+.order-now-btn:focus {
+    outline: none;
+}
+
+/* View All Section */
 .view-all-container {
     text-align: center;
     margin-top: 50px;
@@ -446,6 +523,45 @@ button {
     color: #fff;
 }
 
+/* Стрелки */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FF7A00;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-arrow:hover {
+    background-color: #e56e00;
+}
+
+.carousel-arrow svg {
+    width: 24px;
+    height: 24px;
+}
+
+.carousel-arrow.left {
+    left: 100px;
+}
+
+.carousel-arrow.right {
+    right: 100px;
+}
+
+
+
+
 /* Featured Restaurants Section Styles */
 .featured-restaurants {
     padding: 80px 0;
@@ -464,6 +580,9 @@ button {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .restaurant-card:hover {
@@ -473,6 +592,7 @@ button {
 
 .restaurant-image {
     position: relative;
+    width: 100%;
 }
 
 .restaurant-image img {
@@ -481,21 +601,64 @@ button {
     object-fit: cover;
 }
 
+.discount-badge, .fast-badge {
+    position: absolute;
+    top: 15px;
+    background-color: #FF7A00;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: auto;
+    line-height: 1;
+}
+
+.fast-badge {
+    right: 53px;
+    background-color: #FFC107;
+}
+
 .restaurant-info {
     padding: 15px;
+    flex-grow: 1;
 }
 
 .restaurant-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
     margin-bottom: 8px;
+}
+
+.restaurant-logo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.restaurant-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .restaurant-header h3 {
     font-size: 18px;
     font-weight: 600;
     color: #333;
+    flex-grow: 1;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .restaurant-type {
@@ -521,6 +684,35 @@ button {
     height: 14px;
     margin-right: 5px;
 }
+
+/* Кнопка "Opens tomorrow" */
+.restaurant-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.opens-tomorrow-btn {
+    background-color: rgba(255, 122, 0, 0.1); /* Легкий оранжевый фон */
+    color: #FF7A00; /* Яркий оранжевый текст */
+    border: none;
+    border-radius: 12px; /* Закругленные углы */
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 700; /* Сделано жирным */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.opens-tomorrow-btn:hover {
+    background-color: rgba(255, 122, 0, 0.2);
+}
+
+
 
 /* Special Offers Section Styles */
 .special-offers {
