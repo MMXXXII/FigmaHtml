@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodWagon - Food Delivery</title>
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/public/assets/img/logo.svg" alt="FoodWagon Logo" class="logo-icon">
+                    <span class="logo-text">food<span>wagon</span></span>
+                </div>
+
+                <div class="location">
+                    <span class="location-label">Deliver to:</span>
+                    <div class="location-value">
+                        <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Current Location</span>
+                        <span class="location-address">Mohammadpur Bus Stand, Dhaka</span>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <button class="search-btn">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        Search Food
+                    </button>
+                    <button class="login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Are you starving?</h1>
+                    <p style="color: black;">Within a few clicks, find meals that are accessible near you</p>
+
+
+                    <div class="search-card">
+                        <div class="search-tabs">
+                            <button class="tab-btn active">
+                                <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 17.27A9.69 9.69 0 0 0 12 22a9.68 9.68 0 0 0 7.48-3.5"></path>
+                                    <path d="M14 2H7a2 2 0 0 0-2 2v14"></path>
+                                    <path d="M13 8h7a2 2 0 0 1 2 2v7.95"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M18.4 14.8a3 3 0 0 0 0-5.6"></path>
+                                </svg>
+                                Delivery
+                            </button>
+                            <button class="tab-btn">
+                                <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                                Pickup
+                            </button>
+                        </div>
+
+                        <div class="search-form">
+                            <div class="input-group">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <input type="text" placeholder="Enter Your Address">
+                            </div>
+                            <button class="find-food-btn">
+                                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                Find Food
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="\public\assets\img\hero-header.png" alt="Delicious Noodles">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-items">
+        <div class="container">
+            <div class="items-grid">
+
+                <!-- Карточка 1 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="\public\assets\img\discount-item-4.png" alt="Greys Vage">
+                        <span class="discount-badge">15% Off</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Greys Vage</h3>
+                        <span
+                            style="display: inline-block; background-color: rgba(255, 165, 0, 0.2); color: #FF8C00; padding: 4px 12px; border-radius: 20px; font-weight: bold;">
+                            6 Days Remaining
+                        </span>
+
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="\public\assets\img\discount-item-2.png" alt="Greys Vage">
+                        <span class="discount-badge">10% Off</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Greys Vage</h3>
+                        <span
+                            style="display: inline-block; background-color: rgba(255, 165, 0, 0.2); color: #FF8C00; padding: 4px 12px; border-radius: 20px; font-weight: bold;">
+                            6 Days Remaining
+                        </span>
+
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="\public\assets\img\discount-item-1.png" alt="Greys Vage">
+                        <span class="discount-badge">25% Off</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Greys Vage</h3>
+                        <span
+                            style="display: inline-block; background-color: rgba(255, 165, 0, 0.2); color: #FF8C00; padding: 4px 12px; border-radius: 20px; font-weight: bold;">
+                            7 Days Remaining
+                        </span>
+
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="\public\assets\img\discount-item-3.png" alt="Greys Vage">
+                        <span class="discount-badge">20% Off</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Greys Vsage</h3>
+                        <span
+                            style="display: inline-block; background-color: rgba(255, 165, 0, 0.2); color: #FF8C00; padding: 4px 12px; border-radius: 20px; font-weight: bold;">
+                            8 Days Remaining
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured-steps"
+        style="background: linear-gradient(to bottom, rgba(255, 140, 0, 0.2), #ffffff); padding: 40px 0;">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 style="color: #FF8C00; font-size: 3rem; font-weight: bold; margin-bottom: 30px;">How does it work?
+                </h2>
+            </div>
+            <div class="container">
+                <div class="col-xl-9 mx-auto">
+                    <div class="steps-container d-flex justify-content-between flex-wrap">
+                        <div class="step text-center mb-4 p-3 flex-fill">
+                            <img class="shadow-icon" src="/public/assets/img/location.png" height="112">
+                            <h5 style="color: black; font-weight: bold;">Select location</h5>
+                            <p style="color: #666;">Choose the location where your food will be delivered.</p>
+                        </div>
+                        <div class="step text-center mb-4 p-3 flex-fill">
+                            <img class="shadow-icon" src="/public/assets/img/order.png" height="112">
+                            <h5 style="color: black; font-weight: bold;">Choose order</h5>
+                            <p style="color: #666;">Check over hundreds of menus to pick your favorite food.</p>
+                        </div>
+                        <div class="step text-center mb-4 p-3 flex-fill">
+                            <img class="shadow-icon" src="/public/assets/img/pay.png" height="112">
+                            <h5 style="color: black; font-weight: bold;">Pay advanced</h5>
+                            <p style="color: #666;">It's quick, safe, and simple. Choose a payment method.</p>
+                        </div>
+                        <div class="step text-center mb-4 p-3 flex-fill">
+                            <img class="shadow-icon" src="/public/assets/img/meals.png" height="112">
+                            <h5 style="color: black; font-weight: bold;">Enjoy meals</h5>
+                            <p style="color: #666;">Food is made and delivered directly to your home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Items Section -->
+    <section class="popular-items">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Items</h2>
+            </div>
+
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="/public/assets/img/cheese-burger.png" alt="Food Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cheese Burger</h3>
+                        <div class="item-meta">
+                            <div class="restaurant">
+                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
+                                </svg>
+                                Spice Garden
+                            </div>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">$3.88</span>
+                            <button class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="/public/assets/img/toffes-cake.png" alt="Food Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Beef Burger</h3>
+                        <div class="item-meta">
+                            <div class="restaurant">
+                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
+                                </svg>
+                                Burger Palace
+                            </div>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">$4.00</span>
+                            <button class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="/public/assets/img/dancake.png" alt="Food Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Veggie Pizza</h3>
+                        <div class="item-meta">
+                            <div class="restaurant">
+                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
+                                </svg>
+                                Pizza Hub
+                            </div>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">$1.99</span>
+                            <button class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="/public/assets/img/crispy-sandwitch.png" alt="Food Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Sushi Platter</h3>
+                        <div class="item-meta">
+                            <div class="restaurant">
+                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
+                                </svg>
+                                Sushi World
+                            </div>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">$3.00</span>
+                            <button class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="/public/assets/img/thai-soup.png" alt="Food Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cheese Burger</h3>
+                        <div class="item-meta">
+                            <div class="restaurant">
+                                <svg class="restaurant-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
+                                </svg>
+                                Spice Garden
+                            </div>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">$2.79</span>
+                            <button class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="#" class="view-all-btn">View All Items</a>
+            </div>
+
+            <!-- Стрелки -->
+            <div class="carousel-arrow left">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6"></path>
+                </svg>
+            </div>
+
+            <div class="carousel-arrow right">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Special Offers</h2>
+                <p>Exclusive deals and discounts</p>
+            </div>
+
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>Free Delivery for Your First Order</h3>
+                        <p>Use code: FIRSTORDER</p>
+                        <a href="#" class="offer-btn">Order Now</a>
+                    </div>
+                    <div class="offer-image">
+                        <img src="images/offer1.jpg" alt="Special Offer">
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>20% OFF on Selected Restaurants</h3>
+                        <p>Valid until May 31, 2025</p>
+                        <a href="#" class="offer-btn">View Restaurants</a>
+                    </div>
+                    <div class="offer-image">
+                        <img src="images/offer2.jpg" alt="Special Offer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Follow these simple steps to get your favorite food</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Select Location</h3>
+                    <p>Choose the location where you want the food to be delivered</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <h3>Choose Restaurant</h3>
+                    <p>Browse restaurants and their menus to find your favorite food</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <h3>Place Order</h3>
+                    <p>Customize your order and proceed to checkout</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 17.27A9.69 9.69 0 0 0 12 22a9.68 9.68 0 0 0 7.48-3.5"></path>
+                            <path d="M14 2H7a2 2 0 0 0-2 2v14"></path>
+                            <path d="M13 8h7a2 2 0 0 1 2 2v7.95"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M18.4 14.8a3 3 0 0 0 0-5.6"></path>
+                        </svg>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Food is prepared and delivered to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Testimonials from satisfied customers</p>
+            </div>
+
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-image">
+                            <img src="images/customer1.jpg" alt="Customer">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>John Smith</h4>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The food delivery was super fast and the food was still hot when it arrived.
+                        The app is very easy to use and the tracking feature is great. Will definitely order again!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-image">
+                            <img src="images/customer2.jpg" alt="Customer">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Emily Johnson</h4>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"I love the variety of restaurants available on FoodWagon. The special offers
+                        are great and I've saved a lot of money using the app. The food quality has always been
+                        excellent!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-image">
+                            <img src="images/customer3.jpg" alt="Customer">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Michael Brown</h4>
+                            <div class="rating">
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Customer service is outstanding. I had an issue with my order and they
+                        resolved it immediately. The delivery person was very polite and professional. Highly recommend
+                        FoodWagon!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="app-download">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2>Get The FoodWagon App</h2>
+                    <p>Download the FoodWagon app for faster ordering and personalized recommendations</p>
+
+                    <div class="app-features">
+                        <div class="app-feature">
+                            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 11 12 14 22 4"></polyline>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                            <span>Easy to use interface</span>
+                        </div>
+                        <div class="app-feature">
+                            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Real-time order tracking</span>
+                        </div>
+                        <div class="app-feature">
+                            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                            <span>Exclusive app-only offers</span>
+                        </div>
+                    </div>
+
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <svg class="app-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24c-2.86-1.21-6.08-1.21-8.94 0L5.65 5.67c-.19-.29-.58-.38-.87-.2-.28.18-.37.54-.22.83L6.4 9.48C3.3 11.25 1.28 14.44 1 18h22c-.28-3.56-2.3-6.75-5.4-8.52zM7 15.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm10 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z">
+                                </path>
+                            </svg>
+                            Google Play
+                        </a>
+                        <a href="#" class="app-btn">
+                            <svg class="app-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.68 1.32-1.53 2.6-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.27 2.18-1.66 4.19-3.74 4.25z">
+                                </path>
+                            </svg>
+                            App Store
+                        </a>
+                    </div>
+                </div>
+
+                <div class="app-image">
+                    <img src="images/app-mockup.png" alt="FoodWagon App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="FoodWagon Logo" class="logo-icon">
+                    <span class="logo-text">food<span>wagon</span></span>
+                    <p>The best food delivery service in your city</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Partner With Us</a></li>
+                            <li><a href="#">Ride With Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 FoodWagon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
