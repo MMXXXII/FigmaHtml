@@ -257,9 +257,7 @@ button {
     transition: border-color 0.3s;
 }
 
-.input-group input:focus {
-    border-color: #FF7A00;
-}
+
 
 .find-food-btn {
     display: flex;
@@ -275,9 +273,6 @@ button {
     gap: 8px; /* Добавляем расстояние между иконкой и текстом */
 }
 
-.find-food-btn:hover {
-    background-color: #FF7A00;
-}
 
 
 .btn-icon {
@@ -500,6 +495,7 @@ button {
     outline: none;
 }
 
+
 /* View All Section */
 .view-all-container {
     text-align: center;
@@ -507,20 +503,13 @@ button {
 }
 
 .view-all-btn {
-    display: inline-block;
-    background-color: #fff;
-    color: #FF7A00;
-    border: 2px solid #FF7A00;
-    border-radius: 50px;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s;
-}
-
-.view-all-btn:hover {
-    background-color: #FF7A00;
-    color: #fff;
+    background-color: orange; /* Заливка оранжевым */
+    color: white; /* Белый цвет текста */
+    padding: 10px 20px; /* Внутренний отступ */
+    border-radius: 10px; /* Минимальные закругления */
+    text-decoration: none; /* Убирает подчеркивание */
+    font-weight: bold; /* Более заметный текст */
+    display: inline-block; /* Чтобы кнопка оставалась компактной */
 }
 
 /* Стрелки */
@@ -685,13 +674,26 @@ button {
     margin-right: 5px;
 }
 
-/* Кнопка "Opens tomorrow" */
-.restaurant-footer {
+/* Кнопка "Opens soon" */
+.restaurant-footer .opens-soon-btn {
+    background-color: rgba(76, 175, 80, 0.1); /* Легкий зеленый фон */
+    color: #4CAF50; /* Зеленый текст */
+    border: none;
+    border-radius: 12px; /* Закругленные углы */
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 700; /* Жирный текст */
+    cursor: pointer;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    margin-top: 15px;
+    gap: 5px;
+    transition: background-color 0.3s;
 }
+
+.restaurant-footer .opens-soon-btn:hover {
+    background-color: rgba(76, 175, 80, 0.2); /* Темнее при наведении */
+}
+
 
 .opens-tomorrow-btn {
     background-color: rgba(255, 122, 0, 0.1); /* Легкий оранжевый фон */
@@ -711,6 +713,7 @@ button {
 .opens-tomorrow-btn:hover {
     background-color: rgba(255, 122, 0, 0.2);
 }
+
 
 
 
