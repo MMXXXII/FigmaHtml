@@ -70,10 +70,6 @@ button {
     color: #FF7A00;
 }
 
-.logo-text span {
-    color: #FF7A00;
-}
-
 .location {
     display: flex;
     align-items: center;
@@ -86,11 +82,6 @@ button {
     margin-right: 5px; /* Уменьшено для плотности */
 }
 
-.location-value {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
 
 .location-icon {
     width: 18px;
@@ -117,7 +108,6 @@ button {
     background: none;
     border: none;
     font-size: 16px;
-    transition: color 0.3s;
 }
 
 .search-btn i {
@@ -132,12 +122,6 @@ button {
     color: #FF7A00;
 }
 
-.search-icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-}
-
 .login-btn {
     background-color: #fff;
     color: #FF7A00;
@@ -146,7 +130,6 @@ button {
     padding: 8px 20px;
     font-size: 16px;
     font-weight: 500;
-    transition: all 0.3s;
 }
 
 .login-btn:hover {
@@ -211,7 +194,6 @@ button {
     font-weight: 500;
     color: #666;
     margin-right: 15px;
-    transition: all 0.3s;
     gap: 12px; /* расстояние между иконкой и текстом */
 }
 
@@ -220,12 +202,6 @@ button {
     color: #FF7A00;
 }
 
-
-.tab-icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
-}
 
 .search-form {
     display: flex;
@@ -236,15 +212,6 @@ button {
     position: relative;
     flex: 1;
     margin-right: 15px;
-}
-
-.input-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #999;
 }
 
 .input-group input {
@@ -273,13 +240,14 @@ button {
     gap: 8px; /* Добавляем расстояние между иконкой и текстом */
 }
 
-
-
-.btn-icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
+.section-header.center-orange {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
 }
+
 
 .hero-image {
     position: absolute;
@@ -298,20 +266,25 @@ button {
 
 .section-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Центрируем содержимое */
     align-items: center;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .section-header h2 {
     font-size: 32px;
     font-weight: 700;
     color: #333;
+    flex: 0 1 auto; /* Убираем растягивание */
 }
 
-.section-controls {
+
+.section-header.right-controls {
     display: flex;
+    justify-content: space-between; /* Заголовок слева, контролы справа */
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .view-all {
@@ -510,12 +483,6 @@ button {
     font-size: 14px;
 }
 
-.restaurant-icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 5px;
-    color: #999;
-}
 
 .rating {
     display: flex;
@@ -524,11 +491,6 @@ button {
     font-weight: 600;
 }
 
-.star-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-}
 
 .item-price {
     display: flex;
@@ -542,27 +504,8 @@ button {
     color: #333;
 }
 
-.add-to-cart {
-    width: 36px;
-    height: 36px;
-    background-color: #FF7A00;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s;
-}
 
-.add-to-cart:hover {
-    background-color: #e56e00;
-}
 
-.add-to-cart svg {
-    width: 18px;
-    height: 18px;
-}
 
 /* Кнопка Order Now */
 .order-now-btn {
@@ -589,6 +532,107 @@ button {
 .order-now-btn:focus {
     outline: none;
 }
+
+/* Food Deals Section Styles */
+.food-deals {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.deal-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.deal-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 30px 0; /* Отступы сверху и снизу */
+}
+
+.deal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.deal-content {
+    display: flex;
+    align-items: center;
+}
+
+.deal-text {
+    flex: 0 0 30%;
+    padding: 30px; /* Общий отступ */
+    padding-left: 40px; /* Справа и слева - регулируемые отступы */
+    padding-right: 40px;
+}
+
+/* Для reverse версии */
+.deal-content.reverse .deal-text {
+    order: 2; /* Текст будет вторым */
+    flex: 0 0 30%;
+}
+
+.deal-content.reverse .deal-image {
+    order: 1; /* Картинка первой */
+    flex: 0 0 70%;
+}
+
+.deal-text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.deal-text .highlight {
+    color: #FF7A00;
+    display: block;
+}
+
+.deal-text p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.order-btn {
+    display: inline-block;
+    background-color: #FF9E00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #FF7A00;
+}
+
+.order-btn .arrow {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.deal-image {
+    flex: 0 0 70%; /* 70% для картинки */
+    height: 300px; /* Чуть больше высота для визуального баланса */
+}
+
+.deal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 
 /* View All Section */
@@ -745,29 +789,6 @@ button {
     gap: 4px;
 }
 
-.restaurant-type {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
-.delivery-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #666;
-}
-
-.delivery-time {
-    display: flex;
-    align-items: center;
-}
-
-.time-icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 5px;
-}
 
 /* Кнопка "Opens soon" */
 .restaurant-footer .opens-soon-btn {
@@ -813,16 +834,6 @@ button {
 
 
 /* Special Offers Section Styles */
-.special-offers {
-    padding: 80px 0;
-    background-color: #fff;
-}
-
-.offers-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
 
 .offer-card {
     display: flex;
@@ -838,56 +849,12 @@ button {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.offer-content {
-    flex: 1;
-    padding: 30px;
-}
-
-.offer-content h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.offer-content p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.offer-btn {
-    display: inline-block;
-    background-color: #FF7A00;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
 .offer-btn:hover {
     background-color: #e56e00;
 }
 
-.offer-image {
-    width: 40%;
-}
-
-.offer-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* How It Works Section Styles */
-.how-it-works {
-    padding: 80px 0;
-    background-color: #f9f9f9;
-}
-
 .steps-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -898,22 +865,6 @@ button {
     text-align: center;
 }
 
-.step-icon {
-    width: 80px;
-    height: 80px;
-    background-color: #FFE9E0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-}
-
-.step-icon svg {
-    width: 40px;
-    height: 40px;
-    color: #FF7A00;
-}
 
 .step h3 {
     font-size: 20px;
@@ -928,10 +879,7 @@ button {
 }
 
 /* Customer Reviews Section Styles */
-.customer-reviews {
-    padding: 80px 0;
-    background-color: #fff;
-}
+
 
 .reviews-container {
     display: grid;
@@ -1068,51 +1016,65 @@ button {
     max-height: 500px;
 }
 
-/* Footer Styles */
+/* Обновленные стили для футера */
 .footer {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     padding: 60px 0 20px;
 }
 
-.footer-content {
+.cities-section h3,
+.footer-column h3,
+.footer-social h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cities-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.cities-column a {
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.cities-column a:hover {
+    color: #FF7A00;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
+
+.footer-links-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-.footer-logo {
-    width: 25%;
-}
-
-.footer-logo .logo-icon {
-    filter: brightness(0) invert(1);
-}
-
-.footer-logo .logo-text {
-    color: #fff;
-}
-
-.footer-logo .logo-text span {
-    color: #FF7A00;
-}
-
-.footer-logo p {
-    margin-top: 15px;
-    color: #ccc;
-}
-
 .footer-links {
-    width: 70%;
     display: flex;
-    justify-content: space-between;
+    gap: 80px;
 }
 
-.footer-column h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #fff;
+.footer-column ul {
+    list-style: none;
+    padding: 0;
 }
 
 .footer-column ul li {
@@ -1120,7 +1082,8 @@ button {
 }
 
 .footer-column ul li a {
-    color: #ccc;
+    color: #aaa;
+    font-size: 14px;
     transition: color 0.3s;
 }
 
@@ -1128,14 +1091,19 @@ button {
     color: #FF7A00;
 }
 
+.footer-social {
+    max-width: 350px;
+}
+
 .social-links {
     display: flex;
     gap: 15px;
+    margin-bottom: 25px;
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -1149,17 +1117,121 @@ button {
 }
 
 .social-link svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     color: #fff;
 }
 
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #ccc;
+.newsletter h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #333;
+    color: #fff;
     font-size: 14px;
+}
+
+.subscribe-form input::placeholder {
+    color: #888;
+}
+
+.subscribe-form input:focus {
+    outline: none;
+    background-color: #444;
+}
+
+.subscribe-btn {
+    background-color: #FF9E00;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #FF7A00;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.heart {
+    color: #FF7A00;
+}
+
+/* Адаптивные стили для футера */
+@media (max-width: 992px) {
+    .cities-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-links-container {
+        flex-direction: column;
+    }
+    
+    .footer-social {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+    }
+    
+    .subscribe-form input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .subscribe-btn {
+        border-radius: 4px;
+        padding: 10px;
+    }
 }
 
 /* Responsive Styles */
@@ -1176,7 +1248,6 @@ button {
 @media (max-width: 992px) {
     .items-grid,
     .restaurant-grid,
-    .offers-grid,
     .steps-container,
     .reviews-container {
         grid-template-columns: repeat(2, 1fr);
@@ -1275,14 +1346,6 @@ button {
         margin-bottom: 15px;
     }
     
-    .offer-card {
-        flex-direction: column;
-    }
-    
-    .offer-image {
-        width: 100%;
-        height: 200px;
-    }
     
     .footer-links {
         flex-wrap: wrap;
@@ -1306,7 +1369,6 @@ button {
     
     .items-grid,
     .restaurant-grid,
-    .offers-grid,
     .steps-container,
     .reviews-container {
         grid-template-columns: 1fr;
