@@ -40,7 +40,6 @@ button {
 /* Header Styles */
 .header {
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -79,7 +78,7 @@ button {
     color: #000;
     font-weight: 600;
     display: inline;
-    margin-right: 5px; /* Уменьшено для плотности */
+    margin-right: 5px;
 }
 
 
@@ -91,7 +90,7 @@ button {
 
 .location-address {
     color: #000;
-    margin-left: 3px; /* Слегка уменьшено */
+    margin-left: 3px;
 }
 
 
@@ -104,18 +103,18 @@ button {
 .search-btn {
     display: flex;
     align-items: center;
-    gap: 8px; /* Расстояние между иконкой и текстом */
+    gap: 8px;
     background: none;
     border: none;
     font-size: 16px;
 }
 
 .search-btn i {
-    color: #FF7A00; /* Оранжевая лупа */
+    color: #FF7A00;
 }
 
 .search-btn span {
-    color: #000; /* Черный текст */
+    color: #000;
 }
 
 .search-btn:hover {
@@ -174,7 +173,6 @@ button {
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 500px;
 }
 
@@ -194,7 +192,7 @@ button {
     font-weight: 500;
     color: #666;
     margin-right: 15px;
-    gap: 12px; /* расстояние между иконкой и текстом */
+    gap: 12px;
 }
 
 .tab-btn.active {
@@ -216,15 +214,12 @@ button {
 
 .input-group input {
     width: 100%;
-    padding: 12px 12px 12px 40px; /* учитываем место для иконки */
+    padding: 12px 12px 12px 40px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
     outline: none;
-    transition: border-color 0.3s;
 }
-
-
 
 .find-food-btn {
     display: flex;
@@ -236,13 +231,12 @@ button {
     padding: 12px 20px;
     font-size: 16px;
     font-weight: 500;
-    transition: background-color 0.3s;
-    gap: 8px; /* Добавляем расстояние между иконкой и текстом */
+    gap: 8px;
 }
 
 .section-header.center-orange {
     display: flex;
-    justify-content: center; /* Центрируем по горизонтали */
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
@@ -251,8 +245,8 @@ button {
 
 .hero-image {
     position: absolute;
-    right: -100px;
-    top: -50px;
+    right: 0;
+    top: 0;
     width: 60%;
     z-index: 1;
 }
@@ -260,13 +254,13 @@ button {
 /* Search by Food Section Styles */
 .search-by-food {
     padding: 60px 0;
-    background-color: #fcf7ed; /* Светлый желтовато-оранжевый */
+    background-color: #fcf7ed;
 }
 
 
 .section-header {
     display: flex;
-    justify-content: center; /* Центрируем содержимое */
+    justify-content: center;
     align-items: center;
     margin-bottom: 40px;
     text-align: center;
@@ -276,13 +270,13 @@ button {
     font-size: 32px;
     font-weight: 700;
     color: #333;
-    flex: 0 1 auto; /* Убираем растягивание */
+    flex: 0 1 auto;
 }
 
 
 .section-header.right-controls {
     display: flex;
-    justify-content: space-between; /* Заголовок слева, контролы справа */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -291,7 +285,6 @@ button {
     color: #FFCB11;
     font-weight: 500;
     margin-right: 20px;
-    transition: color 0.3s;
 }
 
 .view-all:hover {
@@ -313,17 +306,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s;
 }
 
 .nav-btn:hover {
     background-color: #FF7A00;
 }
 
-.nav-btn svg {
-    width: 20px;
-    height: 20px;
-}
 
 .food-categories {
     display: flex;
@@ -354,7 +342,7 @@ button {
 
 .category-item h3 {
     font-size: 16px;
-    font-weight: 700; /* Сделать жирным */
+    font-weight: 700;
     color: #333;
 }
 
@@ -380,38 +368,31 @@ button {
 /* Стили для сетки и центрирования карточек */
 .items-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 5 блоков в строке */
-    gap: 30px; /* Расстояние между карточками */
-    justify-content: center; /* Центрируем карточки по горизонтали */
-    align-items: start; /* Карточки выравниваются по верху */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
     width: 100%;
-    margin-top: 30px; /* Отступ сверху */
+    margin-top: 30px;
 }
 
 /* Стили для сетки и центрирования карточек */
 .items-grid2 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 блоков в строке */
-    gap: 30px; /* Расстояние между карточками */
-    justify-content: center; /* Центрируем карточки по горизонтали */
-    align-items: start; /* Карточки выравниваются по верху */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
     width: 100%;
-    margin-top: 30px; /* Отступ сверху */
+    margin-top: 30px;
 }
 
 .item-card {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
     width: 100%;
     max-width: 280px;
-}
-
-.item-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .item-image {
@@ -427,7 +408,7 @@ button {
 .discount-badge {
     position: absolute;
     top: 15px;
-    right: 150px; /* Сдвиг влево для размещения второго бейджа */
+    right: 150px;
     background-color: #FF7A00;
     color: #fff;
     padding: 6px 20px;
@@ -444,8 +425,8 @@ button {
 .fast-badge {
     position: absolute;
     top: 15px;
-    right: 53px; /* Расположен правее основного бейджа */
-    background-color: #FFC107; /* Ярко-желтый цвет */
+    right: 53px;
+    background-color: #FFC107;
     color: #fff;
     padding: 6px 20px;
     border-radius: 8px;
@@ -504,9 +485,6 @@ button {
     color: #333;
 }
 
-
-
-
 /* Кнопка Order Now */
 .order-now-btn {
     background-color: #FF7A00;
@@ -518,10 +496,9 @@ button {
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px; /* Отступ сверху */
-    display: block; /* Чтобы кнопка была отдельной, а не обтекала карточки */
-    width: 100%; /* Кнопка будет растягиваться на всю ширину */
+    margin-top: 20px;
+    display: block;
+    width: 100%;
     
 }
 
@@ -539,26 +516,15 @@ button {
     background-color: #fff;
 }
 
-.deal-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
 .deal-card {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 30px 0; /* Отступы сверху и снизу */
+    margin: 30px 0;
 }
 
-.deal-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
+/* Удален эффект движения при наведении */
 .deal-content {
     display: flex;
     align-items: center;
@@ -566,19 +532,19 @@ button {
 
 .deal-text {
     flex: 0 0 30%;
-    padding: 30px; /* Общий отступ */
-    padding-left: 40px; /* Справа и слева - регулируемые отступы */
+    padding: 30px;
+    padding-left: 40px;
     padding-right: 40px;
 }
 
 /* Для reverse версии */
 .deal-content.reverse .deal-text {
-    order: 2; /* Текст будет вторым */
+    order: 2;
     flex: 0 0 30%;
 }
 
 .deal-content.reverse .deal-image {
-    order: 1; /* Картинка первой */
+    order: 1;
     flex: 0 0 70%;
 }
 
@@ -609,7 +575,6 @@ button {
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 500;
-    transition: background-color 0.3s;
 }
 
 .order-btn:hover {
@@ -622,8 +587,8 @@ button {
 }
 
 .deal-image {
-    flex: 0 0 70%; /* 70% для картинки */
-    height: 300px; /* Чуть больше высота для визуального баланса */
+    flex: 0 0 70%;
+    height: 300px;
 }
 
 .deal-image img {
@@ -632,9 +597,6 @@ button {
     object-fit: cover;
 }
 
-
-
-
 /* View All Section */
 .view-all-container {
     text-align: center;
@@ -642,13 +604,13 @@ button {
 }
 
 .view-all-btn {
-    background-color: orange; /* Заливка оранжевым */
-    color: white; /* Белый цвет текста */
-    padding: 10px 20px; /* Внутренний отступ */
-    border-radius: 10px; /* Минимальные закругления */
-    text-decoration: none; /* Убирает подчеркивание */
-    font-weight: bold; /* Более заметный текст */
-    display: inline-block; /* Чтобы кнопка оставалась компактной */
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
 }
 
 /* Стрелки */
@@ -661,7 +623,6 @@ button {
     padding: 15px;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s;
     z-index: 10;
     width: 50px;
     height: 50px;
@@ -674,11 +635,6 @@ button {
     background-color: #e56e00;
 }
 
-.carousel-arrow svg {
-    width: 24px;
-    height: 24px;
-}
-
 .carousel-arrow.left {
     left: 100px;
 }
@@ -686,9 +642,6 @@ button {
 .carousel-arrow.right {
     right: 100px;
 }
-
-
-
 
 /* Featured Restaurants Section Styles */
 .featured-restaurants {
@@ -706,17 +659,12 @@ button {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.restaurant-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
+/* Удален эффект движения при наведении */
 
 .restaurant-image {
     position: relative;
@@ -727,27 +675,6 @@ button {
     width: 100%;
     height: 180px;
     object-fit: cover;
-}
-
-.discount-badge, .fast-badge {
-    position: absolute;
-    top: 15px;
-    background-color: #FF7A00;
-    color: #fff;
-    padding: 6px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    height: auto;
-    line-height: 1;
-}
-
-.fast-badge {
-    right: 53px;
-    background-color: #FFC107;
 }
 
 .restaurant-info {
@@ -783,76 +710,42 @@ button {
     flex-grow: 1;
 }
 
-.rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-
 /* Кнопка "Opens soon" */
 .restaurant-footer .opens-soon-btn {
-    background-color: rgba(76, 175, 80, 0.1); /* Легкий зеленый фон */
-    color: #4CAF50; /* Зеленый текст */
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
     border: none;
-    border-radius: 12px; /* Закругленные углы */
+    border-radius: 12px;
     padding: 6px 12px;
     font-size: 14px;
-    font-weight: 700; /* Жирный текст */
+    font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: background-color 0.3s;
 }
 
 .restaurant-footer .opens-soon-btn:hover {
-    background-color: rgba(76, 175, 80, 0.2); /* Темнее при наведении */
+    background-color: rgba(76, 175, 80, 0.2);
 }
 
-
 .opens-tomorrow-btn {
-    background-color: rgba(255, 122, 0, 0.1); /* Легкий оранжевый фон */
-    color: #FF7A00; /* Яркий оранжевый текст */
+    background-color: rgba(255, 122, 0, 0.1);
+    color: #FF7A00;
     border: none;
-    border-radius: 12px; /* Закругленные углы */
+    border-radius: 12px;
     padding: 6px 12px;
     font-size: 14px;
-    font-weight: 700; /* Сделано жирным */
+    font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: background-color 0.3s;
 }
 
 .opens-tomorrow-btn:hover {
     background-color: rgba(255, 122, 0, 0.2);
 }
-
-
-
-
-/* Special Offers Section Styles */
-
-.offer-card {
-    display: flex;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.offer-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.offer-btn:hover {
-    background-color: #e56e00;
-}
-
 
 /* How It Works Section Styles */
 .steps-container {
@@ -863,157 +756,6 @@ button {
 
 .step {
     text-align: center;
-}
-
-
-.step h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.step p {
-    color: #666;
-    font-size: 16px;
-}
-
-/* Customer Reviews Section Styles */
-
-
-.reviews-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.review-card {
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.review-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.review-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.reviewer-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 15px;
-}
-
-.reviewer-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.reviewer-info h4 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.review-text {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* App Download Section Styles */
-.app-download {
-    padding: 80px 0;
-    background-color: #f9f9f9;
-}
-
-.app-content {
-    display: flex;
-    align-items: center;
-}
-
-.app-text {
-    width: 50%;
-    padding-right: 50px;
-}
-
-.app-text h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.app-text p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.app-features {
-    margin-bottom: 30px;
-}
-
-.app-feature {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.feature-icon {
-    width: 24px;
-    height: 24px;
-    color: #FF7A00;
-    margin-right: 10px;
-}
-
-.app-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.app-btn {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.app-btn:hover {
-    background-color: #000;
-}
-
-.app-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.app-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.app-image img {
-    max-height: 500px;
 }
 
 /* Обновленные стили для футера */
@@ -1048,7 +790,6 @@ button {
     color: #aaa;
     margin-bottom: 10px;
     font-size: 14px;
-    transition: color 0.3s;
 }
 
 .cities-column a:hover {
@@ -1084,7 +825,6 @@ button {
 .footer-column ul li a {
     color: #aaa;
     font-size: 14px;
-    transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
@@ -1109,17 +849,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s;
 }
 
 .social-link:hover {
     background-color: #FF7A00;
-}
-
-.social-link svg {
-    width: 18px;
-    height: 18px;
-    color: #fff;
 }
 
 .newsletter h4 {
@@ -1161,7 +894,6 @@ button {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .subscribe-btn:hover {
@@ -1241,15 +973,14 @@ button {
     }
     
     .hero-image {
-        right: -150px;
+        right: 0;
     }
 }
 
 @media (max-width: 992px) {
     .items-grid,
     .restaurant-grid,
-    .steps-container,
-    .reviews-container {
+    .steps-container {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -1279,45 +1010,6 @@ button {
     .hero-image img {
         max-width: 400px;
     }
-    
-    .app-content {
-        flex-direction: column;
-    }
-    
-    .app-text {
-        width: 100%;
-        padding-right: 0;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    
-    .app-features {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .app-buttons {
-        justify-content: center;
-    }
-    
-    .app-image {
-        width: 100%;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-    }
-    
-    .footer-logo {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    
-    .footer-links {
-        width: 100%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1346,7 +1038,6 @@ button {
         margin-bottom: 15px;
     }
     
-    
     .footer-links {
         flex-wrap: wrap;
         gap: 30px;
@@ -1357,11 +1048,6 @@ button {
     }
 }
 
-.gray-text {
-    color: gray;
-}
-
-
 @media (max-width: 576px) {
     .hero h1 {
         font-size: 36px;
@@ -1369,13 +1055,8 @@ button {
     
     .items-grid,
     .restaurant-grid,
-    .steps-container,
-    .reviews-container {
+    .steps-container {
         grid-template-columns: 1fr;
-    }
-    
-    .app-buttons {
-        flex-direction: column;
     }
     
     .footer-column {
